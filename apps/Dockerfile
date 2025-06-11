@@ -2,7 +2,7 @@ FROM node:18.20.8-slim
 
 WORKDIR /apps
 
-COPY apps/. .
+COPY . .
 
 RUN npm install
 
