@@ -47,12 +47,6 @@ pipeline {
                 docker compose up --build -d
                 '''
             }
-        }
-        
-        stage('Backup') {
-            steps {
-                 build wait: false, job: 'Backup Image' 
-            }
-        }
+        }    
     }
 }
