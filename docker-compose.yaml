@@ -27,7 +27,7 @@ services:
       - db-data:/var/lib/mysql
   
   dbms:
-    images: "phpmyadmin"
+    image: "phpmyadmin"
     restart: always
     ports:
       - "8001:80"
